@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>交换机命令</title>
-    <url>/2020/06/01/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</url>
-    <content><![CDATA[<center><font face="FZShuTi">交换机命令记录</font></center>
+    <title>云泰数通</title>
+    <url>/2020/06/02/%E4%BA%91%E6%B3%B0%E6%95%B0%E9%80%9A/</url>
+    <content><![CDATA[<center><font face="FZShuTi">广州云泰数通</font></center>
 <a id="more"></a>
 
-<h1 id="思科"><a href="#思科" class="headerlink" title="思科"></a>思科</h1><figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line">查看全部端口的配置信息 show <span class="built_in">running</span>-<span class="built_in">config</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="华三"><a href="#华三" class="headerlink" title="华三"></a>华三</h1><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">查看全部端口的配置信息 displaycurrent-<span class="keyword">configuration</span></span><br></pre></td></tr></table></figure>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/an-old-hope.min.css">]]></content>
+<h1 id="云泰数通"><a href="#云泰数通" class="headerlink" title="云泰数通"></a>云泰数通</h1><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">机房号：</span><br><span class="line"><span class="number">401</span> <span class="number">118</span>个柜子</span><br><span class="line"><span class="number">402</span> <span class="number">96</span> 核心</span><br><span class="line"><span class="number">403</span> <span class="number">96</span> 核心</span><br><span class="line"><span class="number">404</span> <span class="number">118</span></span><br><span class="line"><span class="number">405</span> <span class="number">140</span></span><br><span class="line"><span class="number">406</span> <span class="number">110</span></span><br><span class="line"><span class="number">407</span> <span class="number">110</span></span><br><span class="line"><span class="number">408</span> <span class="number">140</span></span><br><span class="line"><span class="number">410</span> <span class="number">79</span></span><br><span class="line"><span class="number">411</span> <span class="number">80</span></span><br><span class="line"><span class="number">409</span>和<span class="number">412</span> 空不是我们的机房</span><br><span class="line">办公楼<span class="number">402</span>,<span class="number">401</span>是为其他。<span class="number">403</span>办公室做库房</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>交换机</category>
+        <category>云泰机房</category>
       </categories>
       <tags>
-        <tag>command</tag>
+        <tag>工作记录</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2019/03/30/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">Hey, password is required here.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="da592ea40fcfd80da22e6f579bf9b05855dfca60b781a34ad24b3111e2e2f0d2">151503c0011d9c04b84b88145996e396af7ed40506c014bd67bf199a57831e61d26a7ed9054ea54fb3acd022bf424a5b4cd8003d06129b562fb52470907d39d437a142a6d5c81c33850e901f8d30e2887fc18813492895df235126688d9406a9ff11458c7b8bc9d874930212c56bb880e40dec3c73fe4d8adc9d98665080598c6b5515af74053b7c4d1b3fa475674ab7c62e6f6cc59f952edca79b1e8bf0af7aa0555105a47cc19be92a5cc29a1d61590e9c11d056b3c9338ed5500877346215fd789685bb1d89a7e25d13e25ef5e7eece0ccdf4f7535d6496291925deeac9eabdfcadebb37987878383431f5dd8667e48dceebe3268d1b96c27193cd9354480af172ecee2c99daa7b7b429c2879cd9807992b9609aaccc60c628ec4efa6211b53c2014633231a1fca4035a048e6815ea5a37ad918b510a22d85f4c8079fb2b28413c7c182ef63da8eb944976770a28095afde593a9151cbc27f328c8f59194730b5dd9341887ce032a8b3651f18efaa</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
     <title>科学城连云数据中心</title>
@@ -58,30 +65,23 @@
       </tags>
   </entry>
   <entry>
-    <title>云泰数通</title>
-    <url>/2020/06/02/%E4%BA%91%E6%B3%B0%E6%95%B0%E9%80%9A/</url>
-    <content><![CDATA[<center><font face="FZShuTi">广州云泰数通</font></center>
+    <title>交换机命令</title>
+    <url>/2020/06/01/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</url>
+    <content><![CDATA[<center><font face="FZShuTi">交换机命令记录</font></center>
 <a id="more"></a>
 
-<h1 id="云泰数通"><a href="#云泰数通" class="headerlink" title="云泰数通"></a>云泰数通</h1><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">机房号：</span><br><span class="line"><span class="number">401</span> <span class="number">118</span>个柜子</span><br><span class="line"><span class="number">402</span> <span class="number">96</span> 核心</span><br><span class="line"><span class="number">403</span> <span class="number">96</span> 核心</span><br><span class="line"><span class="number">404</span> <span class="number">118</span></span><br><span class="line"><span class="number">405</span> <span class="number">140</span></span><br><span class="line"><span class="number">406</span> <span class="number">110</span></span><br><span class="line"><span class="number">407</span> <span class="number">110</span></span><br><span class="line"><span class="number">408</span> <span class="number">140</span></span><br><span class="line"><span class="number">410</span> <span class="number">79</span></span><br><span class="line"><span class="number">411</span> <span class="number">80</span></span><br><span class="line"><span class="number">409</span>和<span class="number">412</span> 空不是我们的机房</span><br><span class="line">办公楼<span class="number">402</span>,<span class="number">401</span>是为其他。<span class="number">403</span>办公室做库房</span><br></pre></td></tr></table></figure>]]></content>
+<h1 id="思科"><a href="#思科" class="headerlink" title="思科"></a>思科</h1><figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line">查看全部端口的配置信息 show <span class="built_in">running</span>-<span class="built_in">config</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="华三"><a href="#华三" class="headerlink" title="华三"></a>华三</h1><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">查看全部端口的配置信息 displaycurrent-<span class="keyword">configuration</span></span><br></pre></td></tr></table></figure>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/an-old-hope.min.css">]]></content>
       <categories>
-        <category>云泰机房</category>
+        <category>交换机</category>
       </categories>
       <tags>
-        <tag>工作记录</tag>
+        <tag>command</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>测试</title>
-    <url>/2019/03/30/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">Hey, password is required here.</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="da592ea40fcfd80da22e6f579bf9b05855dfca60b781a34ad24b3111e2e2f0d2">151503c0011d9c04b84b88145996e396af7ed40506c014bd67bf199a57831e61d26a7ed9054ea54fb3acd022bf424a5b4cd8003d06129b562fb52470907d39d437a142a6d5c81c33850e901f8d30e2887fc18813492895df235126688d9406a9ff11458c7b8bc9d874930212c56bb880e40dec3c73fe4d8adc9d98665080598c6b5515af74053b7c4d1b3fa475674ab7c62e6f6cc59f952edca79b1e8bf0af7aa0555105a47cc19be92a5cc29a1d61590e9c11d056b3c9338ed5500877346215fd789685bb1d89a7e25d13e25ef5e7eece0ccdf4f7535d6496291925deeac9eabdfcadebb37987878383431f5dd8667e48dceebe3268d1b96c27193cd9354480af172ecee2c99daa7b7b429c2879cd9807992b9609aaccc60c628ec4efa6211b53c2014633231a1fca4035a048e6815ea5a37ad918b510a22d85f4c8079fb2b28413c7c182ef63da8eb944976770a28095afde593a9151cbc27f328c8f59194730b5dd9341887ce032a8b3651f18efaa</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
 </search>
