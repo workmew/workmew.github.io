@@ -22,7 +22,7 @@
   </entry>
   <entry>
     <title>科学城连云数据中心</title>
-    <url>/2020/06/01/%E7%A7%91%E5%AD%A6%E5%9F%8E%E8%BF%9E%E4%BA%91%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83/</url>
+    <url>/2020/06/01/%E7%A7%91%E5%AD%A6%E5%9F%8E%E8%BF%9E%E8%BF%90%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83/</url>
     <content><![CDATA[<center><font face="FZShuTi">科学城连云数据中心</font></center>
 <a id="more"></a>
 
@@ -31,13 +31,13 @@
 
 <h1 id="机房操作守则"><a href="#机房操作守则" class="headerlink" title="机房操作守则"></a>机房操作守则</h1><figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line">操作工单需确认 重启关机勤沟通</span><br><span class="line">设备所在三核对 做好标记防错位</span><br><span class="line">操作环境必观察 前后左右勿干扰</span><br><span class="line">配置<span class="built_in">IP</span>多复查   地址网关区分好</span><br><span class="line">维修只能用市电 机柜电源勿乱动</span><br></pre></td></tr></table></figure>
 
+<h1 id="网络架构"><a href="#网络架构" class="headerlink" title="网络架构"></a>网络架构</h1><p>核心 H3C 12516<br><img src="https://i.loli.net/2020/06/18/THGktjYUScEFB2N.png" alt="图片1.png"></p>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">这里都是非NCSI模式，一台服务器两根AOC线一根网线(网线就是ILO网络)，也就是内网两根线一主一备</span><br><span class="line"></span><br><span class="line">交换机第一个标签：</span><br><span class="line">正面：GZ.kxc303<span class="number">-06</span><span class="number">-02</span><span class="number">-01</span> 第一台服务器</span><br><span class="line">反面：</span><br><span class="line">GZ.kxc303<span class="number">-06</span><span class="number">-02</span><span class="number">-16</span></span><br><span class="line">GZ.kxc303-H_s6800-A-<span class="keyword">in</span><span class="number">.1</span><span class="number">.53</span>/<span class="number">1</span></span><br><span class="line">   后面表示管理IP:  <span class="number">1.53</span> 端口是<span class="number">1</span></span><br></pre></td></tr></table></figure>
 
 
-
-
-
-
-
+<h1 id="交换机位置"><a href="#交换机位置" class="headerlink" title="交换机位置"></a>交换机位置</h1><p><font color=red>交换机摆放在第16托盘位，标签标明是第17位，这是快手资产定的，录入系统也是17位。</font><br><img src="https://i.loli.net/2020/06/10/3vEM7FsWeqVwgAB.jpg" alt="qq_pic_merged_1591780948146.jpg"></p>
+<h1 id="服务器网卡顺序"><a href="#服务器网卡顺序" class="headerlink" title="服务器网卡顺序"></a>服务器网卡顺序</h1><p>黑色ACO线主，橙色AOC线备</p>
+<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">浪潮SA5112M4型号的服务器，光口<span class="number">2</span>，光口<span class="number">1</span>，电口<span class="number">1</span>，电口<span class="number">2</span>，管理口</span><br><span class="line"></span><br><span class="line">浪潮SA5224M4 服务器，从左到右，光纤<span class="number">1</span>口、光纤<span class="number">2</span>口、管理口</span><br><span class="line">联想SR570型号服务器，从左到右依次是光口<span class="number">1</span>、光口<span class="number">2</span>、管理口、电口<span class="number">1</span>、电口<span class="number">2</span></span><br><span class="line">浪潮InspurSA5212M5型号的设备，从左往右分别是BMC、光口<span class="number">1</span>、光口<span class="number">2</span></span><br><span class="line"></span><br><span class="line">浪潮InspurSA5212M5型号的设备添加了拓展网卡，网口变化：从左往右，BMC、板载<span class="number">1</span>口、板载<span class="number">2</span>口、</span><br><span class="line">上面的就是：拓展<span class="number">2</span>口、拓展<span class="number">1</span>口 (与发单人确认左边主)</span><br><span class="line"></span><br><span class="line">Supermicro7048GR-TR服务器，左边为管理口，右边上面为光口A，下面为光口B，左边为电口<span class="number">1</span>，右边为电口<span class="number">2</span></span><br><span class="line"></span><br><span class="line">DELL R730服务器， 从左到右依次是管理口、光口<span class="number">1</span>、光口<span class="number">2</span>、电口<span class="number">1</span>、电口<span class="number">2</span></span><br><span class="line">dellR730xd服务器，从左到右依次为管理口、光口<span class="number">1</span>、光口<span class="number">2</span>、电口<span class="number">1</span>、电口<span class="number">2</span>，</span><br><span class="line">DELL R730 服务器带外接网卡的后视图，最左边是管理口，下面是服务器板载网卡，</span><br><span class="line">从左到右从下到上，依次为光口<span class="number">1</span>、光口<span class="number">2</span>、电口<span class="number">3</span>、电口<span class="number">4</span>、上面为为外接网卡，左面是光口<span class="number">2</span>，右边是光口<span class="number">1</span>。</span><br><span class="line"></span><br><span class="line">曙光SugonI620-G20 服务器</span><br><span class="line">光纤网卡：上为光纤<span class="number">1</span>口，下为光纤<span class="number">2</span>口。网线插口：从左到右，电口<span class="number">1</span>口、电口<span class="number">2</span>口、管理口。</span><br><span class="line"></span><br><span class="line">曙光Sugon W760-G20 服务器</span><br><span class="line">光纤网卡：上为光纤<span class="number">1</span>口，下为光纤<span class="number">2</span>口。网线插口：从左到右，电口<span class="number">1</span>口、电口<span class="number">2</span>口、管理口</span><br><span class="line"></span><br><span class="line">联想LenovoSR590型号的服务器。从左往右分别是：光口<span class="number">1</span>、光口<span class="number">2</span>、BMC、电口<span class="number">1</span>、电口<span class="number">2</span></span><br><span class="line"></span><br><span class="line">联想SR650型号服务器，从左往右依次为光口<span class="number">1</span>，光口<span class="number">2</span>，管理口</span><br><span class="line">联想LenovoSR570型号的服务器。从左往右分别是：光口<span class="number">1</span>、光口<span class="number">2</span>、BMC、电口<span class="number">1</span>、电口<span class="number">2</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -74,15 +74,91 @@
   </entry>
   <entry>
     <title>测试</title>
-    <url>/2019/03/30/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">Hey, password is required here.</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="da592ea40fcfd80da22e6f579bf9b05855dfca60b781a34ad24b3111e2e2f0d2">151503c0011d9c04b84b88145996e396af7ed40506c014bd67bf199a57831e61d26a7ed9054ea54fb3acd022bf424a5b4cd8003d06129b562fb52470907d39d437a142a6d5c81c33850e901f8d30e2887fc18813492895df235126688d9406a9ff11458c7b8bc9d874930212c56bb880e40dec3c73fe4d8adc9d98665080598c6b5515af74053b7c4d1b3fa475674ab7c62e6f6cc59f952edca79b1e8bf0af7aa0555105a47cc19be92a5cc29a1d61590e9c11d056b3c9338ed5500877346215fd789685bb1d89a7e25d13e25ef5e7eece0ccdf4f7535d6496291925deeac9eabdfcadebb37987878383431f5dd8667e48dceebe3268d1b96c27193cd9354480af172ecee2c99daa7b7b429c2879cd9807992b9609aaccc60c628ec4efa6211b53c2014633231a1fca4035a048e6815ea5a37ad918b510a22d85f4c8079fb2b28413c7c182ef63da8eb944976770a28095afde593a9151cbc27f328c8f59194730b5dd9341887ce032a8b3651f18efaa</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <url>/2020/06/01/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<center><font face="FZShuTi">测试</font></center>
+<a id="more"></a>
+
+
+
+<h1 id="aaaaaa"><a href="#aaaaaa" class="headerlink" title="aaaaaa"></a>aaaaaa</h1><p>我就很反感大家老是那么说我，</p>
+<h2 id="bbbbbb"><a href="#bbbbbb" class="headerlink" title="bbbbbb"></a>bbbbbb</h2><p>除了有才，就只剩下那无可比拟的颜值。</p>
+<p><img src="https://i.loli.net/2020/06/02/s4YDmh5uWtoREBG.jpg" alt=""></p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
+<thead>
+<tr>
+<th align="center">文件属性</th>
+<th align="center">文件类型</th>
+<th align="center">0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>-</strong></td>
+<td align="center"><font color=030303><strong>普通文件</strong></font></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center"><strong>d</strong></td>
+<td align="center"><font color=1C86EE><strong>目录</strong></font></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center"><strong>b</strong></td>
+<td align="center"><font color=FFFF00><strong>块设备文件</strong></font></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center"><strong>l</strong></td>
+<td align="center"><font color=4F94CD>符号链接文件，又称软链接文件</font></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center"><strong>p</strong></td>
+<td align="center">pipe即命令管道文件</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center"><strong>s</strong></td>
+<td align="center">socket即套接字文件,用于实现两个进程进行通信</td>
+<td align="center">0</td>
+</tr>
+</tbody></table>
+<h2 id="表格2"><a href="#表格2" class="headerlink" title="表格2"></a>表格2</h2><table border="1">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p><a id="download" href="https://1drv.ms/b/s!Avu5N0BNcwUEi3uX5d_86fcOGj2r?e=pIwX0e" target="_blank" rel="noopener"><i class="fa fa-download"></i><span> 剑桥英语语法</span> </a></p>
+<h1 id="背景文字"><a href="#背景文字" class="headerlink" title="背景文字"></a>背景文字</h1><div><span id="inline-blue"> 站点配置文件</span></div>
+<a><span id="inline-purple"> 主题配置文件 </span></a>
+<div><span id="inline-yellow"> 站点配置文件 </span></div>
+<div><span id="inline-green"> 主题配置文件 </span></div>
+
+
+<h1 id="区域"><a href="#区域" class="headerlink" title="区域"></a>区域</h1><div class="alert alert-success"><i class="fa fa-lightbulb-o"></i>5.命令历史相关环境变量</div>
+<div class="alert alert-info"><i class="fa fa-info"></i> 本文旨在介绍样式的使用规则。</div>
+<div class="alert alert-warning"><i class="fa fa-bell"></i> 本文旨在介绍样式的使用规则。</div>
+<div class="alert alert-danger"><i class="fa fa-bug"></i> 本文旨在介绍样式的使用规则。</div>
+
+<h1 id="文字居中"><a href="#文字居中" class="headerlink" title="文字居中"></a>文字居中</h1><blockquote class="blockquote-center">
+            <p>I heard the echo, <span class="label default">from the valleys and the heart</span><br>Open to the lonely soul of <span class="label info">sickle harvesting</span><br>Repeat outrightly, but also repeat the well-being of<br>Eventually <span class="label warning">swaying in the desert oasis</span><br><span class="label success">I believe</span> I am<br><span class="label primary">Born as the bright summer flowers</span><br>Do not withered undefeated fiery demon rule<br>Heart rate and breathing to bear <span class="label danger">the load of the cumbersome</span><br>Bored</p>
+
+          </blockquote>]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
   </entry>
 </search>
